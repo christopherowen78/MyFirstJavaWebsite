@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="utf-8">
+<title>HTML Intermediate Tutorial</title>
+<link rel="stylesheet" href="resources\css\style.css" />
+<!-- Sets page refresh -->
+<!-- <meta http-equiv="refresh" content="3" /> -->
+
+<meta name="description"
+	content="This is my really, really REALLY exciting HTML intermediate tutorial web page" />
+</head>
+<body>
+	<h1>HTML Intermediate Tutorial</h1>
+
+	<h2>Span and Div</h2>
+	<div id="scissors1">
+		<p>
+			This is <span class="paper">crazy</span>
+		</p>
+	</div>
+
+	<div id="scissors2">
+		<p>
+			This is <em class="paper">crazy</em>
+		</p>
+	</div>
+
+	<h2>Text: Abbreviations, Quotations, and Code</h2>
+	<p>
+		This web site is about <abbr title="HyperText Markup Language">HTML</abbr>
+		and <abbr title="Cascading Style Sheets">CSS</abbr>.
+	</p>
+
+	<p>
+		So I asked Bob about quotations on the Web and he said <q>I know
+			as much about quotations as I do about pigeon fancying</q>. Luckily, I
+		found HTML Dog and it said:
+	</p>
+	<blockquote
+		cite="http://www.htmldog.com/guides/html/intermediate/text/">
+		<p>blockquote and q are used for quotations. blockquote is
+			generally used for standalone often multi-line quotations whereas q
+			is used for shorter, in-line quotations.</p>
+		<cite>- <a
+			href="http://www.htmldog.com/guides/html/intermediate/text/">HTML
+				Dog</a></cite>
+	</blockquote>
+	<br />
+
+	<figure>
+		<blockquote>[Big old quotation about evolution]</blockquote>
+		<figcaption>Charles Darwin</figcaption>
+	</figure>
+
+	<p>
+		According to <cite>the Bible</cite>, after six days God said <q>screw
+			this for a lark, I'm having a nap</q>.
+	</p>
+
+	<p>
+		If you add the line
+		<code>
+			<var>givevaderachuckle</var>
+			= true;
+		</code>
+		to the
+		<code>destroy_planet</code>
+		subroutine and then type
+		<kbd>ilovejabba</kbd>
+		into the console, the big bad green Death Star laser will etch
+		<samp>Slug Lover!</samp>
+		on the planet's surface.
+	</p>
+
+	<pre>
+		<code>
+        &lt;div id="intro"&gt;
+            &lt;h1&gt;Some heading&lt;/h1&gt;
+            &lt;p&gt;Some paragraph paragraph thing thing thingy.&lt;/p&gt;
+        &lt;/div&gt;
+        </code>
+	</pre>
+
+	<h2>Tables: rowspan and colspan</h2>
+	<table>
+		<tr>
+			<th>Column 1 Heading</th>
+			<th>Column 2 Heading</th>
+			<th>Column 3 Heading</th>
+		</tr>
+		<tr>
+			<td>Row 2, cell 1</td>
+			<td colspan="2">Row 2, cell 2, also spanning Row 2, cell 3</td>
+		</tr>
+		<tr>
+			<td rowspan="2">Row 3, cell1, also spanning Row 4, cell 1</td>
+			<td>Row 3, cell 2</td>
+			<td>Row 3, cell 3</td>
+		</tr>
+		<tr>
+			<td>Row 4, cell 2</td>
+			<td>Row 4, cell 3</td>
+		</tr>
+	</table>
+	<br />
+	<br />
+
+	<h2>Definition Lists</h2>
+	<h3>Some random glossary thing</h3>
+	<dl>
+		<dt>HTML</dt>
+		<dd>Abbreviation for HyperText Markup Language - a language used
+			to make web pages.</dd>
+
+		<dt>Dog</dt>
+		<dd>Any carnivorous animal belonging to the family Canidae.</dd>
+		<dd>The domesticated sub-species of the family Canidae, Canis
+			lupus familiaris.</dd>
+
+		<dt>Moo juice</dt>
+		<dt>Cat beer</dt>
+		<dt>Milk</dt>
+		<dd>A white liquid produced by cows and used for human
+			consumption.</dd>
+	</dl>
+
+	<h2>Text: Addresses, Definitions, Bi-directional, and Editorial</h2>
+	<h3>Author contact details</h3>
+	<address>
+		0161 876 8706<br> christopherowen78@gmail.com<br>
+		http://www.nowebsiteyet.com/contactme<br>
+	</address>
+
+	<p>
+		Bob's
+		<dfn title="Dog">canine</dfn>
+		mother and
+		<dfn title="Horse">equine</dfn>
+		father sat him down and carefully explained that he was an
+		<dfn
+			title="A mutation that combines two or more sets of chromosomes from different species">allopolyploid</dfn>
+		organism.
+	</p>
+
+	<bdo dir="rtl">god lmth</bdo>
+
+	<p>
+		I have decided to
+		<del datetime="2015-08-28">decrease</del>
+		<ins cite="http://www.icecreamforall.com/changeofpolicy/">increase</ins>
+		the amount of free icecream that the State will provide for its
+		citizens.
+	</p>
+
+	<h2>Sectioning</h2>
+	<h3>Articles and Sections</h3>
+	<article>
+		<section id="intro">
+			<p>[An introduction]</p>
+		</section>
+		<section id="main_content">
+			<p>[Content]</p>
+		</section>
+		<section id="related">
+			<ul>
+				<li><a href="that.html">That related article</a></li>
+				<li><a href="this.html">This related article</a></li>
+			</ul>
+		</section>
+	</article>
+
+	<h3>Headers and Footers</h3>
+	<article>
+		<header>
+			<h1>Alternatively&hellip;</h1>
+			<p>[An introduction]</p>
+		</header>
+		<section id="main_content2">
+			<p>[Content]</p>
+		</section>
+		<footer>
+			<p>[End notes]</p>
+		</footer>
+	</article>
+	<footer>
+		<p>[Copyright bumf]</p>
+	</footer>
+
+	<h3>Asides</h3>
+	<section id="main_content3">
+		<h4>Tom</h4>
+		<p>[All about Tom]</p>
+		<aside>
+			<h5>Tom Selleck</h5>
+			<p>[A short note about Tom Selleck]</p>
+		</aside>
+		<p>[Maybe a bit more about Tom]</p>
+	</section>
+	<figure>
+		<img src="resources\images\Tom.jpg" />
+		<figcaption>Tom Selleck</figcaption>
+	</figure>
+
+	<h3>Navigation</h3>
+	<nav id="main_nav">
+		<ul>
+			<li><a href="index.html">Home Page</a></li>
+			<li><a href="HTMLBeginnerTutorial.html">HTML Beginner
+					Tutorial</a></li>
+			<li><a href="FirstWebPageC.html">My C# Page</a></li>
+			<li><a href="HelloAngularJS.html">My AngularJS Page</a></li>
+			<li><a href="CSSBeginner.html">CSS Beginner Tutorial</a></li>
+		</ul>
+	</nav>
+
+	<p>
+		<a href="index.html">Return to Home</a>
+	</p>
+
+</body>
+</html>

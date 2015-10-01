@@ -1,0 +1,109 @@
+@CHARSET "UTF-8";
+
+body {
+	background: url("../images/MistyLake.jpg") no-repeat top;
+	background-attachment: fixed;
+}
+
+/*Class and ID Selectors*/
+#top {
+	background-color: #6CF;
+	padding: 20px;
+}
+
+.intro {
+	color: red;
+	font-weight: bold;
+}
+
+p.jam {
+	color: purple;
+	font-family: 'Lucida Bright';
+}
+
+/*Grouping*/
+/*Next lines commented out due to grouping below*/
+/*h3{
+    color:red;
+}
+
+.thisOtherClass{
+    color:red;
+}
+
+.yetAnotherClass{
+    color:red;
+}*/
+h3, .thisOtherClass, .yetAnotherClass {
+	color: red;
+	background-color: #ccc
+}
+
+/*Nesting*/
+#top2 {
+	background-color: #ffd3a8;
+	padding: 1em;
+}
+
+#top2 h3 {
+	color: red;
+}
+
+#top2 p {
+	color: red;
+	font-weight: bold;
+}
+
+/*Links */
+a:link {
+	color: blue;
+}
+
+a:visited {
+	color: purple;
+}
+
+/*Dynamic Pseudo Classes */
+a:active {
+	color: red;
+}
+
+a:hover {
+	text-decoration: none;
+	color: blue;
+	background-color: yellow;
+}
+
+input:focus, textarea:focus {
+	background: #eee;
+}
+
+/*First Children*/
+p:first-child {
+	font-weight: bold;
+	font-size: 40px;
+	border-style: none;
+}
+
+/*Shorthand Properties*/
+/*Margins and Padding*/
+/*Borders*/
+/*Fonts*/
+p {
+	font: 14px/1.5 "Times New Roman", times, serif;
+	padding: 30px 10px;
+	border: 1px black solid;
+	border-width: 1px 5px 5px 1px;
+	border-color: red green blue yellow;
+	margin: 10px 50px;
+}
+
+#inline
+	li {
+	display: inline
+}
+
+#navigation a {
+	display: block;
+	padding: 20px 10px;
+}
